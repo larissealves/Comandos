@@ -10,11 +10,11 @@ python manage.py startapp nomeApp - Iniciar APP
 python manage.py migrate - BD
 python manage.py makemigrations
 python manage.py migrate
-python manage.py showmigrations – Ver. Migração
+python manage.py showmigrations â€“ Ver. MigraÃ§Ã£o
 python manage.py createsuperuser - Criar Usuario
 python manage.py runserver
 
 
-
+GIT: https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
 
