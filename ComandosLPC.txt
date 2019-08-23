@@ -1,0 +1,20 @@
+
+django-admin startproject nomeProj .
+python manage.py runserver
+python manage.py startapp nomeApp - Iniciar APP
+	-  SETTINGS.PY
+	- INSTALLED_APPS e incluir o nomeApp;
+	- ALLOWED_HOSTS = ['*']
+	- LANGUAGE_CODE = 'pt-br'
+	- TIME_ZONE = 'American/Araguaina'
+python manage.py migrate - BD
+python manage.py makemigrations
+python manage.py migrate
+python manage.py showmigrations – Ver. Migração
+python manage.py createsuperuser - Criar Usuario
+python manage.py runserver
+
+
+
+
+
