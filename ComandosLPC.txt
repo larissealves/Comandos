@@ -1,10 +1,10 @@
 
-* CRIAR PROJ. DJANGO
+1. CRIAR PROJ. DJANGO
 
 django-admin startproject nomeProj .
 python manage.py runserver
 python manage.py startapp nomeApp - Iniciar APP
-	-  SETTINGS.PY
+	- SETTINGS.PY
 	- INSTALLED_APPS e incluir o nomeApp;
 	- ALLOWED_HOSTS = ['*']
 	- LANGUAGE_CODE = 'pt-br'
@@ -19,31 +19,32 @@ python manage.py runserver
 
 GIT: https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
-* ORM 
-
+2. ORM 
 python manage.py shell
 
-- Criar
+*Criar
 var = ClasseModels (atributo1 = ' ', atributo2 = '')
 n.save()
 
-- Atualizar
+* Atualizar
 var.atributo2 = ' '
 n.save
 
-- Recuperar/Acessar
-Todo Conteúdo:
+*Recuperar/Acessar Todo Conteúdo:
 var = ClasseModels.objects.all()
-Recuperar Objetos Específicos:
+
+*Recuperar Objetos Específicos:
 var = ClasseModels.objects.filter(atributo1 = '')
-Encadeamento de Filtros:
+
+*Encadeamento de Filtros:
 var = ClasseModels.objects.exclude(atributo1__contains = ' ').filter(atributo = '')
 print(var)
-Recuperar um Único Objeto:
+
+*Recuperar um Único Objeto:
 var = ClassdeModels.objects.get(id=1)
 
 
-* Relacionamento
+3. Relacionamento
 
 
 
