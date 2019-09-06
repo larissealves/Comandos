@@ -46,6 +46,14 @@ var = ClassdeModels.objects.get(id=1)
 
 3. Relacionamento
 
+*OneToOne: Um para Um
+OneToOneField - Fica na entidade dependente
+*ManyToManyField - Muitos para Muitos
+Pode ser colocado em qualquer uma das classes
+*ForeingKey- Um para Muitos
+Fica na classe que representa a relação de muitos 
+
+4. Autenticação
 
 
 
