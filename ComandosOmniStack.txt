@@ -1,0 +1,17 @@
+ -- NODE JS - Instalação para o Windows --
+
+ Instalar um gerenciador de pacote: scoop ou chocolatey
+ Site do node: 
+	1 - Abaixo da versão LTS, Other Downloads;
+	2 - Final da página -> Installing Node.js via package manager
+	3 - Escolher Windows 
+	4 - Escolher comando de acordo com o gerenciador de pacote instalado 
+
+
+
+ -- YARN -- 
+  Acessar site yarnpkg.com
+	1 - Escolher instalação de acordo com o gerenciador de pacote instalado
+
+
+
