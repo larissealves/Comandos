@@ -10,3 +10,76 @@ git push origin caminhoRepositorio | git clone caminhoRepositorio | git remote a
 git push origin master
 
 
+------------------------------------------------------------
+
+Fornecer acesso do PC para o Git Hub:
+Gere uma chave no gitbash: ssh-keygen
+Procure na pasta indicada
+adiciona na conf. do gt hub
+Baixar GitBash e Configurar:
+git config --global user.name " "
+git config --global user.email " "
+.gitignore
+Dentro adc os arquivos que deseja ignorar
+vscode/ →  Sempre que for pasta 
+arquivo.txt, .gitignore e etc
+git status para verificar
+Subir projeto:
+git init - Iniciar Repositório
+git add nomeArq ou git add .
+git commit -m " "
+git status
+git push origin caminhoRepositorio
+git diff: Exibe todas as diferenças entre sua cópia local e o índice sincronizado;
+git diff –cached: Exibe todas as diferenças entre o índice sincronizado e o último commit;
+git diff HEAD: Exibe todas as diferenças entre sua cópia local e o último commit realizado;
+git log:  Log de todos os commits do projeto
+git log -p: Todos os commits em ordem cronológica e os diff ( o que foi alterado nos arquivos )
+git log -p -1 : Determina quantidade de logs que é desejado ver ( -2, -2 e etc )
+git log --pretty=oneline: mostra o cód do commit e a mensagem passada
+gitk: Abre o visualizador de relatório do git 
+
+Desfazer ou reverter:
+Commit antes da hora: 
+	juntar a alteração com o commit realizado antes da hora:
+		git add arquivo.txt → adicionar manualmente 
+		git commit --amend -m “ mensagem aqui “ → editando último commit , só altera não cria outro
+	
+Remover arq. do stage area: 
+Adicionou o arq (git add. ) e quer remover do git por algum motivo.
+git reset HEAD nomearq.txt
+
+
+Remover alterações realizadas dentro do arq.:
+	git checkout -- nomearq.txt → descartar mudanças feita no arquivo e volta pro estado que estava no último commit
+
+
+Renomeou, excluiu e alterou arquivos:
+
+	git add -> se der erro de inconsistência por arq. alterados 
+	→ git status → verificar como está o repositório → verifica os arquivos que precisam ser removidos “changes not staged for commit:” e realiza git rm nomearq.txt → consulta status novamente
+
+Tag:
+git tag → listar tag’s
+git tag -a v1.0 -m “mensagem sobre essa tag” → Criar tag com mensagem sempre é criada no seu commit atual
+
+git tag -a v0.0 aqui_chave_do_commit -m “mensagem” → Cria uma tag para commit’s anteriores
+
+git show nome_da_tag → Detalhes sobre a Tag
+
+git checkout nome_da_tag → Pega os arquivos da versão (tag) passada
+
+git tag -d nome_da-tag → Deleta uma Tag
+
+Branch (Ramificações):
+master → Branch padrão
+
+criar uma nova ramificacao:
+git branch nome_da_branch  
+	git checkout -b nome_da_branch → Cria branch e já troca o repositório 
+	git checkout nome_da_branch → 
+	git branch → lista todas as branchs
+	git merge nome_da_branch -> trás as alterações da branch que vc alterou pra principal (ou qualquer outra)
+obs: esteja na branch da qual deseja mesclar a alteração pra realizar o comando git merge
+git branch -d nome_da_branch → para deletar
+
