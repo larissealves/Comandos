@@ -1,3 +1,10 @@
-1 - py -m ven venv
-2 - . venv/Scripts/activate
-3 - instalar pacotes 
+
+INSTALAR E ATIVAR:
+
+  Instalação: pip install virtualenv
+  Crie um diretório: virtualenv ENV 
+  Ative o ambiente virtual: ENV/Scripts/activate
+
+DESATIVAR AMBIENTE VIRTUAL:
+  
+  deactivate
